@@ -1,0 +1,23 @@
+{
+  "name": "graphic-portfolio",
+  "version": "1.0.0",
+  "description": "Graphic Portfolio 1",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Design",
+    "Front-End",
+    "Showcase"
+  ],
+  "author": "Francis Ver",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "bootstrap": "^5.2.3"
+  }
+}

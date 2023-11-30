@@ -1,0 +1,76 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+
+  &--intro {
+    font-size: 3.5rem;
+    display: inline-block;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 4px 0 4px;
+  }
+
+  &--description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 1rem;
+    text-transform: none;
+    padding: 0 4px 0 4px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.2rem;
+      display: inline-block;
+    }
+  }
+}
+
+// HEADLING LINE
+.heading-line::before {
+  content: "";
+  width: 30rem;
+  height: .1rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: $primary;
+}
+
+.display-3 {
+  font-family: 'Poppins', sans-serif;
+
+  &--title {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, $secondary, $primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.border-right {
+  border-right: .1rem solid $onix;
+  height: 100%;
+}
+
+.accordion-header {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient {
+  @include gradient;
+}

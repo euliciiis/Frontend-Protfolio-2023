@@ -1,0 +1,52 @@
+
+
+// MY THEME PALLETTE
+$olive: #3d4734;
+$onix: #212121;
+// WHITE AND GRAY PALLETTE
+// scss-docs-start gray-color-variables
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $olive;
+$secondary:     $onix;
+$light:         $gray-300;
+$dark:          $black;
+// scss-docs-end theme-color-variables
+
+// ACCORDION ICONS
+$accordion-icon-color:                    $olive;
+$accordion-icon-active-color:             $onix;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>");
+
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708'/></svg>");
+// ACCORDION ICONS
+
+// scss-docs-start navbar-dark-variables
+$navbar-dark-color:                 rgba($white, .95);
+$navbar-dark-hover-color:           rgba($white, .75);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-dark-toggler-border-color:  rgba($white, 0);
+// scss-docs-end navbar-dark-variables
+
+// scss-docs-start accordion-variables
+$accordion-padding-y:                     1.5rem;
+$accordion-padding-x:                     1.5rem;
+// scss-docs-start accordion-variables
+
+//IMPORT BOOTSTRAP MODULES
+@import"../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,86 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/animations' as *;
+
+
+.btn-rounded {
+  transition: all .2s ease-in;
+  &--phone {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &--icon-left {
+    position: relative;
+    padding: .9375rem 1.25rem .9375rem 4.375rem;
+    font-weight: 500;
+    margin: 0;
+    background-color: $white;
+
+    span {
+      @include absoluteCenter;
+      background-color: $primary;
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+
+      i {
+        color: $white;
+        font-size: 1rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+
+  &--icon-right {
+    position: relative;
+    padding: .9375rem 4.375rem .9375rem 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    background-color: $white;
+
+    span {
+      @include absoluteCenter;
+      background-color: $onix;
+      width: 2.5rem;
+      height: 2.5rem;
+      top: 50%;
+      left: 120px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+
+      i {
+        color: $white;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        @include transitionProperty;
+      }
+    }
+  }
+
+  &:hover {
+    @include gradient;
+    color: $light;
+
+    i.icon-shake {
+      animation: shake .5s linear;
+    }
+
+    i.icon-rotate {
+      animation: rotateLeft .2s forwards;
+    }
+    span {
+      background-color: rgba($onix, .9);
+    }
+  }
+  
+}
+
+.active-btn {
+  background-color: $primary;
+  color: $light;
+}

@@ -1,0 +1,35 @@
+@use '../custom' as *;
+
+
+// ICON SHAKE ANIMATION 
+@keyframes shake {
+  25% {
+    rotate: 15deg;
+  }
+  45% {
+    rotate: -15deg;
+  }
+  55% {
+    rotate: 15deg;
+  }
+  75% {
+    rotate: -15deg;
+  }
+  80% {
+    rotate: 15deg;
+  }
+  100%{
+    rotate: -15deg;
+  }
+}
+
+// ICON ROTATE LEFT ANIMATION
+@keyframes rotateLeft {
+  100% {
+    rotate: 135deg;
+  }
+}
+
+@keyframes iconFlip {
+  
+}

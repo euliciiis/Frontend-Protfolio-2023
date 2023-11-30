@@ -1,0 +1,127 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+  padding-top: 1rem;
+  background-color: $secondary;
+}
+
+// CONTACT BOX STYLE 
+.contact-box {
+  position: relative;
+
+  &__icon {
+    width: 2rem;
+    stroke: $gray-500;
+    padding-top: .5rem;
+
+    @include media-breakpoint-up(sm) {
+      width: 4rem;
+    }
+  }
+
+  &__info {
+    padding: .4rem;
+    font-weight: 600;
+
+    &--title {
+      color: $light;
+      text-decoration: none;
+      font-size: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        color: $light;
+        text-decoration: underline;
+      }
+    }
+
+    &--subtitle {
+      font-size: .8rem;
+      color: $gray-600;
+      text-decoration: none;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// SOCMED STYLES 
+.footer-sm {
+
+  background-color: $gray-500;
+
+  a {
+    color: $secondary;
+
+    i {
+      color: $light;
+      font-size: 1.4rem;
+      margin-left: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+// COMPANY INFO STYLES 
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+
+  li {
+    margin-bottom: .5rem;
+    text-decoration: none;
+
+    a {
+      color: $light;
+      text-decoration: none;
+    }
+  }
+}
+
+// COPRYRIGHT STYLES 
+.footer-bottom {
+  background-color: $primary;
+
+  &__copyright {
+    color: $gray-600;
+    font-weight: 400;
+
+    a {
+      color: $gray-300;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// CHEVRON UP STYLES 
+#btn-back-to-top {
+  position: fixed;
+  background-color: $secondary;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+
+  @include transitionProperty;
+
+  i {
+    color: $white;
+    font-size: 1rem;
+    @include absoluteCenter;
+  }
+}
